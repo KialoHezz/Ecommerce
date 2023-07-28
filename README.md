@@ -28,4 +28,6 @@
 
     $ pip install pillow
 
-9. MEDIA_ROOT
+9. MEDIA_ROOT => images to be stored
+
+10.  MEDIA_URL => RENDERING
