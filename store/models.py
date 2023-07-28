@@ -19,6 +19,18 @@ class Product(models.Model):
     digital = models.BooleanField(default=False, null=True, blank=True)
     image = models.ImageField(upload_to='products/', null=True, blank=True)
 
+    # function to prevent ValueError -> if the image not found.
+    @property
+    def imageURL(self):
+        try:
+            # QUERY the url
+            url = self.image.url
+        except:
+            # empty string
+            url = ''
+
+        return url
+
     def __str__(self):
         return self.name
     
