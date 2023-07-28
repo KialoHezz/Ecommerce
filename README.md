@@ -31,3 +31,7 @@
 9. MEDIA_ROOT => images to be stored
 
 10.  MEDIA_URL => RENDERING
+
+11. Query User Cart / render
+
+12. Calculate the totals
