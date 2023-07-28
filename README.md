@@ -21,3 +21,9 @@
     thereafter, fill in.
 
 6. Query All the Products
+
+7. Rendering to be dynamic
+
+8.  In the model[Product] add Image field.
+
+    $ pip install pillow
