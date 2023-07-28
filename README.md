@@ -27,3 +27,5 @@
 8.  In the model[Product] add Image field.
 
     $ pip install pillow
+
+9. MEDIA_ROOT
