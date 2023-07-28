@@ -19,3 +19,5 @@
     $ python manage.py createsuperuser
 
     thereafter, fill in.
+
+6. Query All the Products
