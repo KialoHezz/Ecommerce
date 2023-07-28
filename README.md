@@ -9,4 +9,13 @@
 
 3. PROJECT [ECOMMERCE] - Even   a guest user can shop this means that a user can buy without registration.
 
-4. 
+4. Create data structure  canvas for Ecommerce project, afterwards run:-
+    $ python manage.py makemigrations
+    $ python manage.py migrate => to push to DB
+
+    thereafter, Added the models to the admin panel.
+
+5. Create Admin:-
+    $ python manage.py createsuperuser
+
+    thereafter, fill in.
