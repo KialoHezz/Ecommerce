@@ -9,5 +9,14 @@ for(i=0; i < updateBtns.length; i++){
         let action = this.dataset.action
 
         console.log('productId:', productId, 'Action:', action)
+
+
+        console.log('USER:', user);
+
+        if(user === 'AnonymousUser'){
+            console.log('Not Logged In');
+        }else{
+            console.log('User Logged in, Sending Data...');
+        }
     })
 }
