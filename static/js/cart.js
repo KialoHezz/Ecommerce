@@ -16,7 +16,31 @@ for(i=0; i < updateBtns.length; i++){
         if(user === 'AnonymousUser'){
             console.log('Not Logged In');
         }else{
-            console.log('User Logged in, Sending Data...');
+            updateUserOrder(productId, action)
         }
+        
+    })
+
+}
+
+function updateUserOrder(productId, action){
+    
+    console.log('User Logged in, Sending Data...');
+    // send the data
+    let url = '/updateItem/'
+
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type':'application/json'
+        },
+        // to send data to backend I shld send as string
+        body: JSON.stringify({'productId':productId, 'action':action})
+    })
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log('Data:', data)
     })
 }
